@@ -12,25 +12,38 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Web Mahasiswa Amikom</title>
   </head>
-  <nav class="navbar navbar-expand-sm container-sm bg-primary fixed-top">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
+  <nav class="navbar navbar-expand-lg container-lg bg-primary navbar-light fixed-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between ">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="py-2 d-none d-md-inline-block text-warning font-weight-bold " href="#">Home</a>
-          <a class="py-2 d-none d-md-inline-block text-warning font-weight-bold" href="#">About</a>
-          <a class="py-2 d-none d-md-inline-block text-warning font-weight-bold" href="#">Service</a>
-          <a class="py-2 d-none d-md-inline-block text-warning font-weight-bold" href="#">Testimoni</a>
-          <a class="py-2 d-none d-md-inline-block text-warning font-weight-bold" href="#">Amikom</a>
-          <a class="py-2 d-none d-md-inline-block text-warning font-weight-bold" href="#">FAQ</a>
+          <div class="collapse navbar-collapse d-md-inline-block " id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+          <a class="nav-link text-warning font-weight-bold " href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+          <a class="nav-link text-warning font-weight-bold" href="#">Profile</a>
+              </li>
+          <li class="nav-item">
+          <a class="nav-link text-warning font-weight-bold" href="#">Prodi</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-warning font-weight-bold" href="#">Amikom</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-warning font-weight-bold" href="#">FAQ</a>
+           </li>
+        </ul>
+        </div>
         </div>
       </nav>
       <header>
         
         <div class="jumbotron-lg">
           <div class="container-lg">
-            <img class="float-lg-left" src="img/amikom.png" width="300px" height="100px">    
-         <a class="rounded float-lg-right"> <p class="font-weight-bold">Creative Economy Park </p> web sederhana mahasiswa amikom <div class="p-2 mb-2 bg-warning text-dark"></div></p></a>
+            <img class="float-sm-left" src="img/amikom.png">
+         <a class="rounded box-aa float-sm-right"> <p class="font-weight-bold box-aa text-center"><br> Creative Economy Park<hr class="box-aa"color="black" width="100%" size="100%" noshade> web sederhana mahasiswa amikom <div class="p-2 mb-2 bg-warning text-dark"></div></p></a>
         </div>
       </div>  
       </header>
@@ -38,21 +51,25 @@
      <div class="container-lg">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
+          <div class="p-2 w-100 bg-danger text-dark"></div>
           <div class="carousel-item active">
+           
               <img src="img/tes.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
+        <div class="p-2 mb-4 w-100 bg-danger text-dark"></div>
       </div>
     </div> 
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+      <div class="jumbotron container-lg">
+        <div class="container-lg">
           <h3 class="display-5">PENDAFTARAN MAHASISWA/I BARU</h3>
+          <div class="p-2 mb-2 w-100 bg-primary text-dark"></div>
           <p class="float-lg-left">Selamat Datang di Website UNIVERSITAS AMIKOM Yogyakarta melalui website ini Anda dapat mendapatkan informasi Program Studi, Biaya Kuliah, Beasiswa, Jadwal Kegiatan, Mendaftar secara Online dan informasi lain yang terkait.</p>
-          <button type="submit" class="btn btn-primary justify-content-end">Pilihan Program Studi</button>
-          <button type="submit" class="btn btn-warning justify-content-end">Penerimaan Mahasiswa/i Baru</button>
+          <button type="submit" class="btn btn-primary justify-content-end">Panduan Pendaftaran ></button>
+          <button type="submit" class="btn btn-warning justify-content-end">Daftar Amikom Sekarang ></button>
       </div>
     </div>
-<div class="container">
+<div class="container-lg">
   <div class="card-deck">
     <div class="card">
       <img src="img/tis.jpg" class="card-img-top" alt="...">
@@ -76,25 +93,33 @@
 </div>
 </body>
 <footer>
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron container-lg jumbotron-fluid">
     <div class="container text-center" >
       
-        <a href="https://web.facebook.com/">
-          <img src="img/instagram.png" alt="facebook" >  
+        <a href="https://www.instagram.com/amikomjogja/">
+          <img src="img/instagram.png" alt="instagram" >  
         </a>
-        <a href="https://web.twitter.com/">
+        <a href="https://web.facebook.com/amikomjogja/">
           <img src="img/facebook.png" alt="facebook" >
         </a>
-        <a href="https://web.instagram.com/">
-          <img src="img/twitter.png" alt="facebook" >
+        <a href="https://twitter.com/AmikomJogja/">
+          <img src="img/twitter.png" alt="twitter" >
         </a>
 
   </div>
 </div>
-<div class="footer">
-  <p>WWW.AMIKOM.AC.ID</p>
-</div>
-  </footer> 
+<!-- Footer -->
+<footer class="page-footer font-small bg-secondary container-lg">
+
+  <!-- Copyright -->
+  <div class="card-footer text-center py-3">© 2020 Copyright:
+    <a href="https://home.amikom.ac.id/">www.amikom.ac.id</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
