@@ -10,14 +10,18 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/my.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <title>Web Mahasiswa Amikom</title>
   </head>
-  <nav class="navbar navbar-expand-lg container-lg bg-warning navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg container-fluid bg-warning navbar-light fixed-top">
     <div class="container d-flex flex-column flex-md-row justify-content-between ">
+      
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-md-inline-block " id="navbarText">
+          
+
+          <div class="collapse navbar-collapse d-md-inline-block " id="navbarText" >
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
           <a class="nav-link text-light font-weight-bold " href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -32,27 +36,34 @@
           <a class="nav-link text-light font-weight-bold" href="https://home.amikom.ac.id">Amikom</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link text-light font-weight-bold" href="PopUP.html">FAQ</a>
+        <a class="nav-link text-light font-weight-bold" data-toggle="modal" data-target="#exampleModal">FAQ</a>
           </li>
         <li>
           <li class="nav-item">
-          <a button class="btn btn-dark" href="login.html">Login</button></a>  
+          <a button class="btn btn-outline-success" href="login.html">Login</button></a>  
         </li>  
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
         </div>
         </div>
+        
       </nav>
+      
+ 
       <header>
         
-        <div class="jumbotron-lg">
-          <div class="container-lg">
+        <div class="jumbotron-fluid">
+          <div class="container-fluid">
             <img class="float-sm-left" src="img/amikom.png">
          <a class="rounded box-aa float-sm-right"> <p class="font-weight-bold box-aa text-center"><br> Creative Economy Park<hr class="box-aa"color="black" width="100%" size="100%" noshade> web sederhana mahasiswa amikom <div class="p-2 mb-2 bg-primary text-dark"></div></p></a>
         </div>
       </div>  
       </header>
     <body>
-     <div class="container-lg">
+     <div class="container-fluid">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="p-2 w-100 bg-danger text-dark"></div>
@@ -64,16 +75,16 @@
         <div class="p-2 mb-4 w-100 bg-danger text-dark"></div>
       </div>
     </div> 
-      <div class="jumbotron container-lg">
-        <div class="container-lg">
+      <div class="jumbotron-fluid container-fluid">
+        <div class="container-fluid">
           <h3 class="display-5">PENDAFTARAN MAHASISWA/I BARU</h3>
           <div class="p-2 mb-2 w-100 bg-primary text-dark"></div>
           <p class="float-lg-left">Selamat Datang di Website UNIVERSITAS AMIKOM Yogyakarta melalui website ini Anda dapat mendapatkan informasi Program Studi, Biaya Kuliah, Beasiswa, Jadwal Kegiatan, Mendaftar secara Online dan informasi lain yang terkait.</p>
-          <button type="submit" class="btn btn-primary justify-content-end">Panduan Pendaftaran ></button>
-          <a button type="submit" class="btn btn-warning justify-content-end" href="form.html">Daftar Amikom Sekarang ></button></a>
+          <a button type="submit" class="btn btn-primary btn-lg justify-content-end" href="form.html">Daftar Amikom Sekarang ></button></a>
       </div>
     </div>
-<div class="container-lg">
+
+<div class="container-fluid">
   <div class="card-deck">
     <div class="card">
       <img src="img/tis.jpg" class="card-img-top" alt="...">
@@ -97,7 +108,7 @@
 </div>
 </body>
 <footer>
-  <div class="jumbotron container-lg jumbotron-fluid">
+  <div class="jumbotron container-fluid jumbotron-fluid">
     <div class="container text-center" >
       
         <a href="https://www.instagram.com/amikomjogja/">
@@ -112,8 +123,10 @@
 
   </div>
 </div>
+
+
 <!-- Footer -->
-<footer class="page-footer font-small bg-secondary container-lg">
+<footer class="page-footer font-small bg-secondary container-fluid">
 
   <!-- Copyright -->
   <div class="card-footer text-center text-white py-3">© 2020 Copyright:
@@ -123,7 +136,40 @@
 
 </footer>
 <!-- Footer -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hubungi Kami</h5>
+        <button class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="modal-body">
+     <form>
+        <div class="form-group">
+         <label>Nama</label>
+         <input type="text" name="" class="form-control">
+        </div>
 
+        <div class="form-group">
+         <label>Email</label>
+         <input type="email" name="" class="form-control">
+        </div>
+
+        <div class="form-group">
+         <label>Pertanyaan?</label>
+         <textarea class="form-control"></textarea>
+        </div>
+     </form>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
     <!-- Optional JavaScript -->
